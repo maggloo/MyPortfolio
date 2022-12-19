@@ -1,0 +1,34 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.footerBlock {
+  min-height: 20vh;
+  color: $primaryColor;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .title {
+      margin: 15px;
+    }
+
+    .socialsWrapper {
+      @include flexPositioning(space-evenly, stretch);
+      width: 280px;
+      margin: 15px 0;
+
+        .socialsImg {
+          cursor: pointer;
+          height: 40px;
+          width: 40px;
+        }
+    }
+
+  }
+
+
+}
+
+
+

@@ -1,0 +1,14 @@
+@import "../common/styles/sass/variables";
+.nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: $primaryColor;
+        font-weight: 800;
+    }
+}
