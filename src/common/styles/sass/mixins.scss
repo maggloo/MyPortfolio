@@ -1,0 +1,14 @@
+@mixin text($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+@mixin flexPositioning($justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin backgroundAndTextColouring($backgroundColour, $textColour) {
+
+}

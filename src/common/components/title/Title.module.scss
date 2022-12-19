@@ -1,0 +1,19 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+
+.title {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 24px;
+
+    &::before {
+        content: '';
+        background-image: url('../../../assets/imgs/dots-bg.svg');
+        display: block;
+        height: 37px;
+        left: -14px;
+        top: -14px;
+        position: absolute;
+        width: 37px;
+    }
+}

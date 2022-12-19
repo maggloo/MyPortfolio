@@ -1,0 +1,28 @@
+@import './common/styles/sass/variables';
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: $secondaryColor;
+
+  .headerAndMainWrapper {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url("https://img.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_53876-117324.jpg?w=1480&t=st=1670768617~exp=1670769217~hmac=7684d551daa5f3c2540c61273df7bcae96059dc210015af6b146fd81faed999c");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      transform: rotate(180deg);
+      filter: blur(35px);
+      z-index: -1;
+    }
+  }
+
+}

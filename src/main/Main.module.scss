@@ -1,0 +1,41 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+
+
+.mainBlock {
+    height: 100vh;
+    //background-color: transparent;
+    color: $primaryColor;
+    position: relative;
+    font-size: 34px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+        .text {
+            width: 500px;
+
+            .highlight {
+                color: $bordersColor;
+            }
+        }
+
+        .photo {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+        }
+
+
+
+}
+
+

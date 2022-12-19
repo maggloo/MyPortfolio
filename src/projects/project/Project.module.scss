@@ -1,0 +1,87 @@
+@import '../../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
+
+.project {
+  width: 450px;
+  //background-color: $primaryColor;
+  background-color: white;
+  min-height: max-content;
+  display: flex;
+  flex-direction: column;
+  color: $primaryColor;
+  border-radius: $borderRadius;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px 2px rgba(64, 83, 184, 0.2);
+
+  .img {
+    height: 300px;
+    width: 100%;
+    @include flexPositioning(center, center);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: $borderRadius $borderRadius 0 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: $borderRadius $borderRadius 0 0;
+      background-color: #1B1B1CFF;
+      opacity: 0.7;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .link {
+      color: $secondaryColor;
+      border: 3px solid $bordersColor;
+      padding: 10px;
+      width: 100px;
+      text-align: center;
+      text-decoration: none;
+      position: relative;
+      z-index: 1;
+      border-radius: $borderRadius;
+
+     /* &:before {
+        content: '';
+        position: absolute;
+        border: none;
+        border-radius: $borderRadius;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        nm
+      }*/
+    }
+
+  }
+
+  .descriptionAndTitle {
+    padding: 25px 20px;
+
+    .title {
+      @include text(20px, 700);
+      color: $primaryColor;
+      margin: 0 0 5px;
+    }
+
+    .description {
+      @include text(14px, 400);
+      line-height: 1.0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
