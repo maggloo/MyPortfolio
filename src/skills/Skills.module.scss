@@ -14,12 +14,12 @@
       width: 100%;
       @include flexPositioning(space-evenly, stretch);
       flex-wrap: wrap;
+
       @media screen and (max-width: 1370px) {
         justify-content: center;
       }
     }
   }
-
 }
 
 

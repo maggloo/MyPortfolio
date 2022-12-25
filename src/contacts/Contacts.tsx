@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import Title from "../common/components/title/Title";
 
 const Contacts = () => {
     return (
-        <div className={styles.contactsBlock}>
+        <div className={styles.contactsBlock} id={'ContactMe'}>
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
                 <Title title={'Get In Touch'}/>
                 <form className={styles.form}>

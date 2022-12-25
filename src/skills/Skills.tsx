@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Skills.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import jsImg from "../assets/imgs/js-svgrepo-com.svg";
@@ -19,13 +19,19 @@ const Skills = () => {
     }
 
     return (
-        <div className={styles.skillsBlock}>
+        <div className={styles.skillsBlock} id={'Skills'}>
             <div className={`${styleContainer.container} ${styles.skillContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={styles.skills}>
-                    <Skill title={'React'} style={reactSkillStyle} description={'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.'}/>
-                    <Skill title={'JS'}  style={jsSkillStyle} description={'Lorem ipsum dolor sit amet consectetuer elit aenean commodo ligula eget.'}/>
-                    <Skill title={'CSS'}  style={cssSkillStyle} description={'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean.'}/>
+                    <Skill title={'React'}
+                           style={reactSkillStyle}
+                           description={'Good and detailed knowledge of React Hooks, life cycle of functional, class components, HOCs, FLUX architecture, React Router Dom 6.'}/>
+                    <Skill title={'JS'}
+                           style={jsSkillStyle}
+                           description={'Good knowledge of native JavaScript, practical experience with MVC, Event Loop and DOM events.'}/>
+                    <Skill title={'CSS'}
+                           style={cssSkillStyle}
+                           description={'Detailed work with Flexbox, Grid, SCSS.'}/>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import styleContainer from '../common/styles/Container.module.css'
+import styleContainer from '../common/styles/Container.module.scss'
 import telegram from '../assets/imgs/socialsSvg/telegram-svgrepo-com.svg';
 import whatsapp from '../assets/imgs/socialsSvg/whatsapp-svgrepo-com.svg';
 import github from '../assets/imgs/socialsSvg/github-icon-1-logo-svgrepo-com.svg';

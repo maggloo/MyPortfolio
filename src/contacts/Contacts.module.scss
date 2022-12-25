@@ -2,10 +2,8 @@
 @import '../common/styles/sass/mixins';
 
 .contactsBlock {
-  //background-color: $secondaryColor;
   padding: 100px 0;
   color: $primaryColor;
-
 
   .contactsContainer {
     flex-direction: column;
@@ -16,8 +14,8 @@
       gap: 20px;
       width: 600px;
 
-      @media screen and (max-width: 540px) {
-        width: 100%;
+      @media screen and (max-width: 650px) {
+        width: 95%;
       }
 
       .inputsWrapper {
@@ -27,19 +25,20 @@
       }
 
       .input {
-        display: block;
-        border-radius: 30px;
+        border-radius: $borderRadius;
         width: 100%;
         height: 60px;
         padding: 10px 30px;
-        font-size: 16px;
-        font-weight: 400;
+        @include text(16px, 400);
         line-height: 1.6;
-        color: #454360;
+        color: $primaryColor;
         background-color: #FFF;
-        background-image: none;
         border: 0;
-        box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);;
+        box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+
+        &:focus {
+          outline: $accentColor 1px solid;
+        }
       }
 
       .textarea {
@@ -50,23 +49,35 @@
 
       .emailLink {
         text-decoration: none;
-        color: $bordersColor;
+        color: $accentColor;
       }
-
 
       .sendForm {
         width: 180px;
-        font-family: "Rubik", sans-serif;
-        font-size: 16px;
-        font-weight: 700;
-        overflow: hidden;
+        font-family: inherit;
+        @include text(16px, 700);
         line-height: 1;
         padding: 12px 32px;
         border: none;
         color: $secondaryColor;
-        background-color: $bordersColor;
+        background-size: 300% 100%;
+        transition: all 0.4s ease-in-out;
+        background-color: $accentColor;
+        background-image: linear-gradient(
+                        to right,
+                        $accentColor,
+                        #852d91,
+                        #a3a1ff,
+                        #f24645
+        );
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
         border-radius: $borderRadius;
         cursor: pointer;
+
+        &:hover {
+          background-position: 100% 0;
+          transition: all .4s ease-in-out;
+        }
       }
     }
   }

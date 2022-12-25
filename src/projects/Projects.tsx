@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Projects.module.scss";
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../common/styles/Container.module.scss";
 import Project from "./project/Project";
 import Title from "../common/components/title/Title";
 import imgSocial from "../assets/imgs/types-of-social-media.png";
@@ -15,12 +15,16 @@ const Projects = () => {
         backgroundImage: 'url(' + imgTodo + ')',
     }
     return (
-        <div className={styles.projectsBlock}>
+        <div className={styles.projectsBlock} id={'Projects'}>
             <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
                 <Title title={'My Projects'}/>
                 <div className={styles.projects}>
-                    <Project style={socialStyle} title={'Social Network'} description={'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget elit aenean commodo ligula eget elit aenean commodo ligula egetelit aenean commodo ligula eget .'}/>
-                    <Project style={todolistStyle} title={'Todo List'} description={'Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget elit aenean commodo ligula eget elit aenean commodo ligula egetelit aenean commodo ligula eget .'}/>
+                    <Project style={socialStyle}
+                             title={'Social Network'}
+                             description={'A typescript project with React. Implemented class components as container components, used Redux library as a state container.'}/>
+                    <Project style={todolistStyle}
+                             title={'Todo List'}
+                             description={'A typescript project with React. Implemented modern syntax using React Hooks and Redux as state management. Detailed work with Material UI for better user experience.'}/>
                 </div>
             </div>
         </div>

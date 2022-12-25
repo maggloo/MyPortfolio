@@ -3,20 +3,20 @@
 
 .projectsBlock {
   min-height: 70vh;
+  background-color: $secondaryColor;
   background-image: url("../assets/imgs/background/gridme.png");
-  //background-color: white;
   background-position: center;
   padding: 100px 0;
   color: $primaryColor;
 
-    .projects {
-      width: 100%;
-      @include flexPositioning(space-evenly, flex-start);
-      flex-wrap: wrap;
+  .projects {
+    width: 100%;
+    @include flexPositioning(space-evenly, flex-start);
+    flex-wrap: wrap;
 
-      @media screen and (max-width: 1140px) {
-        justify-content: center;
-      }
+    @media screen and (max-width: 1140px) {
+      justify-content: center;
     }
+  }
 }
 

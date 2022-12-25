@@ -7,10 +7,9 @@
 
   .footerContainer {
     flex-direction: column;
-    justify-content: flex-start;
 
     .title {
-      margin: 15px;
+      margin-top: 15px;
     }
 
     .socialsWrapper {
@@ -18,16 +17,13 @@
       width: 280px;
       margin: 15px 0;
 
-        .socialsImg {
-          cursor: pointer;
-          height: 40px;
-          width: 40px;
-        }
+      .socialsImg {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+      }
     }
-
   }
-
-
 }
 
 
