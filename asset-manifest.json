@@ -1,21 +1,27 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.21e2e731.css",
-    "main.js": "/MyPortfolio/static/js/main.a986a528.js",
+    "main.css": "/MyPortfolio/static/css/main.8fc73d13.css",
+    "main.js": "/MyPortfolio/static/js/main.fb4adb33.js",
     "static/js/787.1ed0c42c.chunk.js": "/MyPortfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/ProfilePic.jpg": "/MyPortfolio/static/media/ProfilePic.2d52f44da5343ae72910.jpg",
     "static/media/daily-hourly-schedule-and-do-list-template.jpg": "/MyPortfolio/static/media/daily-hourly-schedule-and-do-list-template.50ad31d59f18737ac421.jpg",
     "static/media/types-of-social-media.png": "/MyPortfolio/static/media/types-of-social-media.fe91144a117668abb238.png",
     "static/media/react-svgrepo-com.svg": "/MyPortfolio/static/media/react-svgrepo-com.c776c14607f920b203fc6fd76d081e44.svg",
     "static/media/css-3-svgrepo-com.svg": "/MyPortfolio/static/media/css-3-svgrepo-com.7e88a7277f0af811d019f3c9b3618666.svg",
     "static/media/dots-bg.svg": "/MyPortfolio/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "static/media/github-icon-1-logo-svgrepo-com.svg": "/MyPortfolio/static/media/github-icon-1-logo-svgrepo-com.4337c0ed9125319cd364932525bb375c.svg",
+    "static/media/telegram-svgrepo-com.svg": "/MyPortfolio/static/media/telegram-svgrepo-com.d35461dc7b20898a0e35a06a860992b1.svg",
+    "static/media/closeOutline.svg": "/MyPortfolio/static/media/closeOutline.dd30bf1b16867cef6ff2631519d8b59f.svg",
+    "static/media/whatsapp-svgrepo-com.svg": "/MyPortfolio/static/media/whatsapp-svgrepo-com.0e9d1475aeaf2fd8af65120d3c6f82fe.svg",
     "index.html": "/MyPortfolio/index.html",
+    "static/media/burger.svg": "/MyPortfolio/static/media/burger.821ee2b838c20a63603591d27a2fc8a0.svg",
     "static/media/js-svgrepo-com.svg": "/MyPortfolio/static/media/js-svgrepo-com.ef08bf5cf7a8dde88ab016fe718f92b3.svg",
-    "main.21e2e731.css.map": "/MyPortfolio/static/css/main.21e2e731.css.map",
-    "main.a986a528.js.map": "/MyPortfolio/static/js/main.a986a528.js.map",
+    "main.8fc73d13.css.map": "/MyPortfolio/static/css/main.8fc73d13.css.map",
+    "main.fb4adb33.js.map": "/MyPortfolio/static/js/main.fb4adb33.js.map",
     "787.1ed0c42c.chunk.js.map": "/MyPortfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21e2e731.css",
-    "static/js/main.a986a528.js"
+    "static/css/main.8fc73d13.css",
+    "static/js/main.fb4adb33.js"
   ]
 }
