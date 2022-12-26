@@ -1,5 +1,13 @@
 @import "../common/styles/sass/mixins";
+@import "../common/styles/sass/variables";
 
 .header {
-    @include flexPositioning(flex-end, flex-start);
+    @include flexPositioning(flex-end, stretch);
+    width: 100%;
+    background-color: $secondaryColor;
+    box-shadow: 0px 14px 21px -10px rgba(34, 60, 80, 0.2);
+    background-position: top;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }

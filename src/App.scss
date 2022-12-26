@@ -7,16 +7,13 @@ body {
 
   .footerImg {
     &:before{
-      //background-image: url("https://i.pinimg.com/originals/97/6d/59/976d59c107212751de5acbaf197b441d.jpg");
       background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/ba7d9386128681.5d909dad4b6ac.jpg");
-      //transform: rotate(10deg);
     }
   }
 
   .headerImg {
     &:before{
       background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/a733bf86128681.5d909dad4a123.jpg");
-      //background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/a00d9586128681.5d909dad4cde9.jpg");
       transform: rotate(180deg);
       height: 100vh;
     }

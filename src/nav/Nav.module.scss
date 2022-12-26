@@ -4,7 +4,6 @@
 .navBar {
   width: 600px;
   @include flexPositioning(flex-end, stretch);
-  position: relative;
 
   .burgIcon {
     display: none;
@@ -60,13 +59,13 @@
     }
 
     .showMenu {
-      background-color: #FFF;
+      background-color: $secondaryColor;
       position: absolute;
       border-radius: $borderRadius;
       margin: 20px;
       height: 40vh;
       @include flexPositioning(space-evenly,  center);
-      background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/882ca886128681.5d909dad4e52d.jpg");
+      //background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/882ca886128681.5d909dad4e52d.jpg");
       box-shadow: 0 5px 38px 35px rgba(24, 41, 54, 0.2);
       background-position: bottom;
       flex-direction: column;
