@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './Project.module.scss';
 
-const Project = (props: any) => {
+type ProjectPropsType = {
+    style: {
+        backgroundImage: string
+    }
+    title: string
+    description: string
+}
+
+const Project = (props: ProjectPropsType) => {
     return (
         <div className={styles.project}>
             <div className={styles.img} style={props.style}>

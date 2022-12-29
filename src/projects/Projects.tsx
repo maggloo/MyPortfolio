@@ -3,8 +3,10 @@ import styles from "./Projects.module.scss";
 import styleContainer from "../common/styles/Container.module.scss";
 import Project from "./project/Project";
 import Title from "../common/components/title/Title";
-import imgSocial from "../assets/imgs/types-of-social-media.png";
-import imgTodo from "../assets/imgs/daily-hourly-schedule-and-do-list-template.jpg";
+import imgSocial from "../assets/imgs/projectIMGs/types-of-social-media.png";
+import imgTodo from "../assets/imgs/projectIMGs/daily-hourly-schedule-and-do-list-template.jpg";
+
+
 
 const Projects = () => {
     const socialStyle = {

@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './Skill.module.scss';
 
-const Skill = (props: any) => {
+type SkillPropsType = {
+    style: {
+        backgroundImage: string
+    }
+    title: string
+    description: string
+}
+
+const Skill = (props: SkillPropsType) => {
 
     return (
         <div className={styles.skill}>

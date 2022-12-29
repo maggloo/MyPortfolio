@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
-import telegram from '../assets/imgs/socialsSvg/telegram-svgrepo-com.svg';
-import whatsapp from '../assets/imgs/socialsSvg/whatsapp-svgrepo-com.svg';
-import github from '../assets/imgs/socialsSvg/github-icon-1-logo-svgrepo-com.svg';
+import telegram from '../assets/imgs/socialsSVG/telegram-svgrepo-com.svg';
+import whatsapp from '../assets/imgs/socialsSVG/whatsapp-svgrepo-com.svg';
+import github from '../assets/imgs/socialsSVG/github-icon-1-logo-svgrepo-com.svg';
 
 const Footer = () => {
     return (

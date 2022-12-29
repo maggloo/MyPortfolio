@@ -7,13 +7,13 @@ body {
 
   .footerImg {
     &:before{
-      background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/ba7d9386128681.5d909dad4b6ac.jpg");
+      background-image: url("./assets/imgs/background/gradient02.jpg");
     }
   }
 
   .headerImg {
     &:before{
-      background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/a733bf86128681.5d909dad4a123.jpg");
+      background-image: url("./assets/imgs/background/gradient03.jpg");
       transform: rotate(180deg);
       height: 100vh;
     }

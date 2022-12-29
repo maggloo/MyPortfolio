@@ -4,10 +4,10 @@
 .header {
     @include flexPositioning(flex-end, stretch);
     width: 100%;
-    background-color: $secondaryColor;
-    box-shadow: 0px 14px 21px -10px rgba(34, 60, 80, 0.2);
-    background-position: top;
+    background-color: rgba(247, 247, 254, 0.91);
+    box-shadow: 0 14px 21px -10px rgba(34, 60, 80, 0.2);
     position: fixed;
     top: 0;
     z-index: 2;
+    transition: all 0.2s;
 }

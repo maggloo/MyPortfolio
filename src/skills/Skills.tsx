@@ -3,9 +3,9 @@ import styles from './Skills.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
-import jsImg from "../assets/imgs/js-svgrepo-com.svg";
-import reactImg from "../assets/imgs/react-svgrepo-com.svg";
-import cssImg from "../assets/imgs/css-3-svgrepo-com.svg";
+import jsImg from "../assets/imgs/skillsSVG/js-svgrepo-com.svg";
+import reactImg from "../assets/imgs/skillsSVG/react-svgrepo-com.svg";
+import cssImg from "../assets/imgs/skillsSVG/css-3-svgrepo-com.svg";
 
 const Skills = () => {
     const reactSkillStyle = {
