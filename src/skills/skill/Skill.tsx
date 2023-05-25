@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Skill.module.scss';
+import {Fade} from "react-awesome-reveal";
 
 type SkillPropsType = {
     style: {
@@ -12,13 +13,15 @@ type SkillPropsType = {
 const Skill = (props: SkillPropsType) => {
 
     return (
-        <div className={styles.skill}>
-            <div className={styles.icon} style={props.style}></div>
-            <h3 className={styles.title}>{props.title}</h3>
-            <span className={styles.description}>
+        <Fade triggerOnce direction={"up"}>
+            <div className={styles.skill}>
+                <div className={styles.icon} style={props.style}></div>
+                <h3 className={styles.title}>{props.title}</h3>
+                <span className={styles.description}>
                 {props.description}
             </span>
-        </div>
+            </div>
+        </Fade>
     );
 };
 
