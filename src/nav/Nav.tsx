@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import styles from './Nav.module.scss';
-import burgerIcon from '../assets/imgs/utils/burger.svg'
-import closeIcon from '../assets/imgs/utils/closeOutline.svg'
+import burgerIcon from '../assets/imgs/utils/burger.svg';
+import closeIcon from '../assets/imgs/utils/closeOutline.svg';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
@@ -24,10 +25,10 @@ const Nav = () => {
                 alt={'open menu'}
             />
             <div className={`${styles.nav} ${navbarOpen ? ` ${styles.showMenu}` : ""}`}>
-                <a href={"#Main"} onClick={closeMenu}>Main</a>
-                <a href={"#Skills"} onClick={closeMenu}>Skills</a>
-                <a href={"#Projects"} onClick={closeMenu}>Projects</a>
-                <a href={"#ContactMe"} onClick={closeMenu}>Contact Me</a>
+                <Link to="Main" smooth={true} activeClass={styles.active} offset={1} spy={true} onClick={closeMenu}>Main</Link>
+                <Link to="Skills" smooth={true} activeClass={styles.active} offset={1} spy={true} onClick={closeMenu}>Skills</Link>
+                <Link to="Projects" smooth={true} activeClass={styles.active} offset={1} spy={true} onClick={closeMenu}>Projects</Link>
+                <Link to="ContactMe" smooth={true} activeClass={styles.active} offset={1} spy={true} onClick={closeMenu}>Contact Me</Link>
                 <img
                     src={closeIcon}
                     alt="close sidebar"

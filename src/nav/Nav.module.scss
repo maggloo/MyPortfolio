@@ -19,10 +19,15 @@
       @include text(20px, 800);
       text-decoration: none;
       color: $primaryColor;
+      cursor: pointer;
 
       &:hover {
         color: $accentColor;
       }
+    }
+
+    .active {
+      color: $accentColor;
     }
 
     .closeIcon {
@@ -56,6 +61,8 @@
         width: 50px;
         cursor: pointer;
       }
+
+
     }
 
     .showMenu {
@@ -64,7 +71,7 @@
       border-radius: $borderRadius;
       margin: 20px;
       height: 40vh;
-      @include flexPositioning(space-evenly,  center);
+      @include flexPositioning(space-evenly, center);
       //background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/882ca886128681.5d909dad4e52d.jpg");
       box-shadow: 0 5px 38px 35px rgba(24, 41, 54, 0.2);
       background-position: bottom;
