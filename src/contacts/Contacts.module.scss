@@ -22,6 +22,7 @@
         display: flex;
         flex-direction: row;
         gap: 10px;
+        position: relative;
       }
 
       .input {
@@ -41,10 +42,23 @@
         }
       }
 
+      .textError {
+        color: red;
+        position: absolute;
+        right: 0;
+        font-size: smaller;
+        background-color: white;
+        transform: translate(-20%, 150%);
+      }
+
       .textarea {
         height: 164px;
         resize: none;
         font-family: inherit;
+      }
+
+      .error {
+        outline: red 1px solid;
       }
 
       .emailLink {
