@@ -14,13 +14,13 @@ const Footer = () => {
                     <h2 className={styles.title}>Margarita Privalko</h2>
                     <div className={styles.socialsWrapper}>
                         <div className={styles.social}>
-                            <img src={telegram} className={styles.socialsImg}/>
+                            <img alt='' src={telegram} className={styles.socialsImg}/>
                         </div>
                         <div className={styles.social}>
-                            <img src={github} className={styles.socialsImg}/>
+                            <img alt='' src={github} className={styles.socialsImg}/>
                         </div>
                         <div className={styles.social}>
-                            <img src={whatsapp} className={styles.socialsImg}/>
+                            <img alt='' src={whatsapp} className={styles.socialsImg}/>
                         </div>
                     </div>
                     <span>@ All Rights Reserved</span>
