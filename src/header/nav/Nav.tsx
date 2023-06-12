@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import styles from './Nav.module.scss';
-import burgerIcon from '../assets/imgs/utils/burger.svg';
-import closeIcon from '../assets/imgs/utils/closeOutline.svg';
-import { Link, animateScroll as scroll } from "react-scroll";
+import burgerIcon from '../../assets/imgs/utils/burger.svg';
+import { Link } from "react-scroll";
 
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
@@ -30,11 +29,11 @@ const Nav = () => {
                 <Link to="Projects" smooth={true} activeClass={styles.active} offset={1} spy={true} onClick={closeMenu}>Projects</Link>
                 <Link to="ContactMe" smooth={true} activeClass={styles.active} offset={1} spy={true} onClick={closeMenu}>Contact Me</Link>
                 <img
-                    src={closeIcon}
-                    alt="close sidebar"
+                    src={burgerIcon}
                     id={'hw5-menu-close'}
                     className={styles.closeIcon}
                     onClick={handleToggle}
+                    alt={'open menu'}
                 />
             </div>
         </div>
