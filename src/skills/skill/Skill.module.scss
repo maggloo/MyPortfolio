@@ -6,7 +6,6 @@
   background-color: white;
   min-height: 300px;
   @include flexPositioning(center, center);
-  flex-direction: column;
   text-align: center;
   padding: 30px;
   border-radius: $borderRadius;
@@ -15,32 +14,21 @@
   box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.2);
   transition: 0.4s background-color;
 
-/*  &:nth-child(3n+1) {
-      background-color: rgb(255, 242, 249);
-      box-shadow: 0 5px 20px 10px rgba(249, 123, 139, 0.2);
-  }
+  .skillItem {
+    @include flexPositioning(center, center);
+    flex-direction: column;
 
-  &:nth-child(3n+2) {
-      background-color: #eae7ff;
-      box-shadow: 0 5px 20px 10px rgba(96, 96, 224, 0.36);
-  }
+    .icon {
+      height: 80px;
+      width: 80px;
+      margin-bottom: 22px;
+      background-size: cover;
+      background-position: center;
+    }
 
-  &:nth-child(3n+3) {
-      background-color: rgb(255, 249, 236);
-      box-shadow: 0 5px 20px 10px rgba(249, 215, 76, 0.2);
-
-  }*/
-
-  .icon {
-    height: 80px;
-    width: 80px;
-    margin-bottom: 22px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .title {
-    font-weight: 800;
+    .title {
+      font-weight: 800;
+    }
   }
 }
 

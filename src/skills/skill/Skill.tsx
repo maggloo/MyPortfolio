@@ -13,8 +13,8 @@ type SkillPropsType = {
 const Skill = (props: SkillPropsType) => {
 
     return (
-        <Fade triggerOnce direction={"up"}>
-            <div className={styles.skill}>
+        <Fade triggerOnce direction={"up"} className={styles.skill}>
+            <div className={styles.skillItem}>
                 <div className={styles.icon} style={props.style}></div>
                 <h3 className={styles.title}>{props.title}</h3>
                 <span className={styles.description}>

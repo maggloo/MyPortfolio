@@ -12,8 +12,8 @@ type ProjectPropsType = {
 
 const Project = (props: ProjectPropsType) => {
     return (
-        <Fade triggerOnce direction={"up"}>
-            <div className={styles.project}>
+        <Fade triggerOnce direction={"up"} className={styles.project}>
+            <div>
                 <div className={styles.img} style={props.style}>
                     <a href={''} className={styles.link}>Visit</a>
                 </div>
