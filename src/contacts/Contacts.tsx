@@ -28,7 +28,7 @@ const Contacts = () => {
         validationSchema: emailSchema,
 
         onSubmit: values => {
-            axios.post('http://localhost:3010/sendMessage', {
+            axios.post('https://portfolio-node-js-gilt.vercel.app/sendMessage', {
                 name: values.name,
                 email: values.email,
                 subject: values.subject,
