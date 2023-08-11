@@ -6,6 +6,8 @@ import {Fade} from "react-awesome-reveal";
 import {useFormik} from "formik";
 import * as Yup from 'yup';
 import axios from "axios";
+import TextField from '@mui/material/TextField';
+import {useFormStore} from "../store/formStore";
 
 const validate = {
     email: Yup.string().email('Invalid email').required('Required'),
@@ -16,6 +18,8 @@ const emailSchema = Yup.object().shape({
 })
 
 const Contacts = () => {
+
+    const sendForm = useFormStore(state => state.sendForm)
 
     const formik = useFormik({
         initialValues: {
@@ -28,7 +32,7 @@ const Contacts = () => {
         validationSchema: emailSchema,
 
         onSubmit: values => {
-            axios.post('https://portfolio-node-js-gilt.vercel.app/sendMessage', {
+            sendForm({
                 name: values.name,
                 email: values.email,
                 subject: values.subject,
@@ -44,18 +48,41 @@ const Contacts = () => {
                     <Title title={'Get In Touch'}/>
                     <form className={styles.form} onSubmit={formik.handleSubmit}>
                         <div className={styles.inputsWrapper}>
-                            <input type='text' size={40} placeholder={'Your name'} {...formik.getFieldProps('name')}
-                                   className={styles.input}></input>
-                            <input type='text' placeholder={`Email address`} {...formik.getFieldProps('email')}
-                                   className={`${styles.input} ${formik.touched.email && formik.errors.email && styles.error}`}></input>
-                            {formik.touched.email && formik.errors.email && (
-                                <span className={styles.textError}>{formik.errors.email}</span>
-                            )}
+
+                            <TextField sx={{
+                                width: '100%',
+                                height: '60px',
+                            }} {...formik.getFieldProps('name')}
+                                       color="secondary"
+                                       label="Your name"
+                                       variant="outlined"/>
+
+                            <TextField sx={{
+                                width: '100%',
+                                height: '60px',
+                            }} {...formik.getFieldProps('email')}
+                                       color="secondary"
+                                       label="Email address"
+                                       variant="outlined"
+                                       error={!!(formik.touched.email && formik.errors.email)}
+                                       helperText={formik.errors.email}
+                                       required
+                            />
+
                         </div>
-                        <input type='text' placeholder={'Subject'} {...formik.getFieldProps('subject')}
-                               className={styles.input}></input>
-                        <textarea placeholder={'Message'} cols={40} rows={5} {...formik.getFieldProps('message')}
-                                  className={styles.input + ' ' + styles.textarea}/>
+
+                        <TextField {...formik.getFieldProps('subject')}
+                                   color="secondary"
+                                   label="Subject"
+                                   variant="outlined"/>
+
+                        <TextField {...formik.getFieldProps('message')}
+                                   rows={5}
+                                   color="secondary"
+                                   label="Message"
+                                   multiline
+                                   variant="outlined"/>
+
                         <p>Don't like forms? Send me an <a href={'mailto:rprivalko@gmail.com'}
                                                            className={styles.emailLink}>email</a>!</p>
                         <button className={styles.sendForm} type='submit'>Send</button>
