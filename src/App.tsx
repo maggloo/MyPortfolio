@@ -7,6 +7,8 @@ import Projects from "./projects/Projects";
 import Contacts from "./contacts/Contacts";
 import Footer from "./footer/Footer";
 import styles from './common/styles/Wrapper.module.scss'
+import {useFormStore} from "./store/formStore";
+import CustomizedSnackbars from "./common/components/snackbar/Snackbar";
 
 export type styleNavType = {
     backgroundColor: string,
@@ -19,6 +21,8 @@ function App() {
         backgroundColor: 'transparent',
         boxShadow: 'none',
     })
+
+    const status = useFormStore(state => state.status)
 
     useEffect(() => {
         const handleScroll = (e: Event) => {
@@ -39,6 +43,7 @@ function App() {
         };
     }, []);
 
+
     return (
         <div className="App">
             <div className={styles.wrapperClass + ' headerImg'}>
@@ -51,6 +56,7 @@ function App() {
                 <Contacts/>
                 <Footer/>
             </div>
+            { status && <CustomizedSnackbars severity={status}/>}
         </div>
     );
 }
