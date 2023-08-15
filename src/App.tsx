@@ -56,7 +56,7 @@ function App() {
                 <Contacts/>
                 <Footer/>
             </div>
-            { status && <CustomizedSnackbars severity={status}/>}
+            { status && <CustomizedSnackbars severity={status} text={status && status !== 'error' ? 'Your message has been sent!' : 'Some error occurred'}/>}
         </div>
     );
 }

@@ -10,7 +10,7 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-export default function CustomizedSnackbars(props: {severity: AlertColor}) {
+export default function CustomizedSnackbars(props: {severity: AlertColor, text: string}) {
     const [open, setOpen] = React.useState(true);
     const setStatus = useFormStore(state => state.setStatus)
 
@@ -24,9 +24,9 @@ export default function CustomizedSnackbars(props: {severity: AlertColor}) {
     };
 
     return (
-        <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity={props.severity} sx={{backgroundColor: '#a75fe7'}}>
-                This is a success message!
+        <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+            <Alert onClose={handleClose} severity={props.severity} sx={ props.severity !== 'error' ? {backgroundColor: '#a75fe7'} : {}}>
+                {props.text}
             </Alert>
         </Snackbar>
         /* <Alert severity="error">This is an error message!</Alert>
