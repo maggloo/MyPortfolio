@@ -5,8 +5,9 @@ import Title from "../common/components/title/Title";
 import {Fade} from "react-awesome-reveal";
 import {useFormik} from "formik";
 import * as Yup from 'yup';
-import axios from "axios";
 import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 import {useFormStore} from "../store/formStore";
 
 const validate = {
@@ -20,6 +21,7 @@ const emailSchema = Yup.object().shape({
 const Contacts = () => {
 
     const sendForm = useFormStore(state => state.sendForm)
+    const loading = useFormStore(state => state.loading)
 
     const formik = useFormik({
         initialValues: {
@@ -85,7 +87,14 @@ const Contacts = () => {
 
                         <p>Don't like forms? Send me an <a href={'mailto:rprivalko@gmail.com'}
                                                            className={styles.emailLink}>email</a>!</p>
-                        <button className={styles.sendForm} type='submit'>Send</button>
+                        <Button variant="contained"
+                                color="secondary"
+                                disabled={!(!formik.errors.email && formik.touched.email)}
+                                type="submit"
+                                sx={{ width: '200px'}}
+                                endIcon={<SendIcon />}>
+                            Send
+                        </Button>
                     </form>
                 </div>
             </div>
