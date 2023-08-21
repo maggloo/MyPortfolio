@@ -89,11 +89,11 @@ const Contacts = () => {
                                                            className={styles.emailLink}>email</a>!</p>
                         <Button variant="contained"
                                 color="secondary"
-                                disabled={!(!formik.errors.email && formik.touched.email)}
+                                disabled={!(!formik.errors.email && formik.touched.email && !loading)}
                                 type="submit"
-                                sx={{ width: '200px'}}
-                                endIcon={<SendIcon />}>
-                            Send
+                                sx={{width: '200px'}}
+                                endIcon={<SendIcon/>}>
+                            {loading ? <div>{'Sending...'}</div> : <div>{'Send'}</div>}
                         </Button>
                     </form>
                 </div>
