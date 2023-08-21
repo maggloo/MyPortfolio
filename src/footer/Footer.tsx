@@ -1,10 +1,13 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import styleContainer from '../common/styles/Container.module.scss'
-import telegram from '../assets/imgs/socialsSVG/telegram-svgrepo-com.svg';
-import whatsapp from '../assets/imgs/socialsSVG/whatsapp-svgrepo-com.svg';
-import github from '../assets/imgs/socialsSVG/github-icon-1-logo-svgrepo-com.svg';
-import { Fade } from "react-awesome-reveal";
+import {Fade} from "react-awesome-reveal";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import {Icon, IconButton} from "@mui/material";
+
 
 const Footer = () => {
     return (
@@ -14,13 +17,41 @@ const Footer = () => {
                     <h2 className={styles.title}>Margarita Privalko</h2>
                     <div className={styles.socialsWrapper}>
                         <div className={styles.social}>
-                            <img alt='' src={telegram} className={styles.socialsImg}/>
+                            <IconButton
+                                href={'https://www.linkedin.com/in/margarita-privalko-6a6040240/'}
+                                target={'_blank'}
+                                sx={{
+                                    transition: '0.2s all',
+                                    '&:hover': {color: '#a75fe7', transition: '0.3s all'}
+                                }}
+                            >
+                                <LinkedInIcon/>
+                            </IconButton>
                         </div>
                         <div className={styles.social}>
-                            <img alt='' src={github} className={styles.socialsImg}/>
+                            <IconButton
+                                href={'https://github.com/maggloo'}
+                                target={'_blank'}
+                                sx={{
+                                    transition: '0.2s all',
+                                    '&:hover': {color: '#a75fe7', transition: '0.3s all'}
+                                }}
+                            >
+                                <GitHubIcon/>
+
+                            </IconButton>
                         </div>
                         <div className={styles.social}>
-                            <img alt='' src={whatsapp} className={styles.socialsImg}/>
+                            <IconButton
+                                href={'https://t.me/maggloo'}
+                                target={'_blank'}
+                                sx={{
+                                    transition: '0.2s all',
+                                    '&:hover': {color: '#a75fe7', transition: '0.3s all'}
+                                }}
+                            >
+                                <TelegramIcon/>
+                            </IconButton>
                         </div>
                     </div>
                     <span>@ All Rights Reserved</span>

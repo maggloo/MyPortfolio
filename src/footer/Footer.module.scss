@@ -13,14 +13,16 @@
     }
 
     .socialsWrapper {
-      @include flexPositioning(space-evenly, stretch);
+      @include flexPositioning(center, stretch);
       width: 280px;
       margin: 15px 0;
+      gap: 10px;
 
       .socialsImg {
         cursor: pointer;
         height: 40px;
         width: 40px;
+
       }
     }
   }
