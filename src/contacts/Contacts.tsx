@@ -88,10 +88,9 @@ const Contacts = () => {
                         <p>Don't like forms? Send me an <a href={'mailto:rprivalko@gmail.com'}
                                                            className={styles.emailLink}>email</a>!</p>
                         <Button variant="contained"
-                                color="secondary"
                                 disabled={!(!formik.errors.email && formik.touched.email && !loading)}
                                 type="submit"
-                                sx={{width: '200px'}}
+                                sx={{width: '200px', bgcolor: 'primary.main', '&:disabled': {cursor: 'wait'}}}
                                 endIcon={<SendIcon/>}>
                             {loading ? <div>{'Sending...'}</div> : <div>{'Send'}</div>}
                         </Button>
