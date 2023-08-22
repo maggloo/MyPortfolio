@@ -9,11 +9,21 @@ import Footer from "./footer/Footer";
 import styles from './common/styles/Wrapper.module.scss'
 import {useFormStore} from "./store/formStore";
 import CustomizedSnackbars from "./common/components/snackbar/Snackbar";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export type styleNavType = {
     backgroundColor: string,
     boxShadow: string,
 }
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#a75fe7'
+        },
+    },
+});
+
 
 function App() {
 
@@ -45,19 +55,22 @@ function App() {
 
 
     return (
-        <div className="App">
-            <div className={styles.wrapperClass + ' headerImg'}>
-                <Header style={style}/>
-                <Main/>
+        <ThemeProvider theme={theme}>
+            <div className="App">
+                <div className={styles.wrapperClass + ' headerImg'}>
+                    <Header style={style}/>
+                    <Main/>
+                </div>
+                <Skills/>
+                <Projects/>
+                <div className={styles.wrapperClass + ' footerImg'}>
+                    <Contacts/>
+                    <Footer/>
+                </div>
+                {status && <CustomizedSnackbars severity={status}
+                                                text={status && status !== 'error' ? 'Your message has been sent!' : 'Some error occurred'}/>}
             </div>
-            <Skills/>
-            <Projects/>
-            <div className={styles.wrapperClass + ' footerImg'}>
-                <Contacts/>
-                <Footer/>
-            </div>
-            { status && <CustomizedSnackbars severity={status} text={status && status !== 'error' ? 'Your message has been sent!' : 'Some error occurred'}/>}
-        </div>
+        </ThemeProvider>
     );
 }
 
