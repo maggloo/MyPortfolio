@@ -22,11 +22,17 @@ const Projects = () => {
                     <Title title={'My Projects'}/>
                     <div className={styles.projects}>
                         <Project style={socialStyle}
-                                 title={'Social Network'}
-                                 description={'A typescript project with React. Implemented class components as container components, used Redux library as a state container.'}/>
+                                 title={'Weather App'}
+                                 description={'It\'s a simple, yet powerful app that gives you all the weather information you need, in a beautiful and easy-to-use interface.'}/>
                         <Project style={todolistStyle}
-                                 title={'Todo List'}
+                                 title={'Todolist'}
                                  description={'A typescript project with React. Implemented modern syntax using React Hooks and Redux as state management. Detailed work with Material UI for better user experience.'}/>
+                        <Project style={todolistStyle}
+                                 title={'Guess the Country'}
+                                 description={'A full javascript project. The project includes user database via firebase, and works with maps and map data via amCharts, implementing MVC atchitecture.'}/>
+                        <Project style={todolistStyle}
+                                 title={'Inctagram'}
+                                 description={'Web application similar to Instagram, a huge team project.'}/>
                     </div>
                 </div>
             </div>
