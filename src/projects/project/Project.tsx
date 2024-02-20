@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Project.module.scss';
 import {Fade} from "react-awesome-reveal";
-import SendIcon from "@mui/icons-material/Send";
 import Button from "@mui/material/Button";
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
@@ -11,16 +10,21 @@ type ProjectPropsType = {
     }
     title: string
     description: string
+    link: string
 }
 
 const Project = (props: ProjectPropsType) => {
+
     return (
         <Fade triggerOnce direction={"up"} className={styles.project}>
             <div>
                 <div className={styles.img} style={props.style}>
                     <Button variant="contained"
                             sx={{width: '150px', bgcolor: 'primary.main',}}
-                            endIcon={<ArrowOutwardIcon/>}>
+                            endIcon={<ArrowOutwardIcon/>}
+                            href={props.link}
+                            target={'_blank'}
+                    >
                         Visit
                     </Button>
                 </div>

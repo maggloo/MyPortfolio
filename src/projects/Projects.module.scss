@@ -11,7 +11,7 @@
 
   .projects {
     width: 100%;
-    @include flexPositioning(space-evenly, flex-start);
+    @include flexPositioning(center, flex-start);
     flex-wrap: wrap;
 
     @media screen and (max-width: 1140px) {
