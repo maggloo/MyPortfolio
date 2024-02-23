@@ -7,7 +7,6 @@ type SkillPropsType = {
         backgroundImage: string
     }
     title: string
-    description: string
 }
 
 const Skill = (props: SkillPropsType) => {
@@ -17,9 +16,6 @@ const Skill = (props: SkillPropsType) => {
             <div className={styles.skillItem}>
                 <div className={styles.icon} style={props.style}></div>
                 <h3 className={styles.title}>{props.title}</h3>
-                <span className={styles.description}>
-                {props.description}
-            </span>
             </div>
         </Fade>
     );
