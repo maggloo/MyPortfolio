@@ -11,6 +11,7 @@ type ProjectPropsType = {
     title: string
     description: string
     link: string
+    hashtags: string[]
 }
 
 const Project = (props: ProjectPropsType) => {
@@ -32,7 +33,12 @@ const Project = (props: ProjectPropsType) => {
                     <h4 className={styles.title}>{props.title}</h4>
                     <span className={styles.description}>
                     {props.description}
-                </span>
+                    </span>
+                    <div className={styles.hashtags}>
+                        { props.hashtags.map(el => {
+                            return <span> #{el} </span>
+                        })}
+                    </div>
                 </div>
             </div>
         </Fade>
