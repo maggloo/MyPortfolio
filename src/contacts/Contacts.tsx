@@ -44,7 +44,7 @@ const Contacts = () => {
     })
 
     return (
-        <Fade triggerOnce>
+        <Fade triggerOnce direction={"left"}>
             <div className={styles.contactsBlock} id={'ContactMe'}>
                 <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
                     <Title title={'Get In Touch'}/>

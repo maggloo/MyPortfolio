@@ -14,7 +14,7 @@ import redux from "../assets/imgs/skillsSVG/redux.svg";
 import tailwind from "../assets/imgs/skillsSVG/tailwind.svg";
 import typescript from "../assets/imgs/skillsSVG/typescript.svg";
 import cssImg from "../assets/imgs/skillsSVG/css-3-svgrepo-com.svg";
-import zustand from "../assets/imgs/skillsSVG/zustand.png";
+import zustand from "../assets/imgs/skillsSVG/zustand1.png";
 import { Fade } from "react-awesome-reveal";
 const Skills = () => {
     const addBackgroundImage = (img: string) => {
