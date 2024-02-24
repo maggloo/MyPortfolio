@@ -4,6 +4,7 @@ import {IconButton} from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TelegramIcon from "@mui/icons-material/Telegram";
+import EmailIcon from '@mui/icons-material/Email';
 
 const SocialMedia = () => {
     return (
@@ -43,6 +44,18 @@ const SocialMedia = () => {
                     }}
                 >
                     <TelegramIcon/>
+                </IconButton>
+            </div>
+            <div className={styles.social}>
+                <IconButton
+                    href={'mailto:rprivalko@gmail.com'}
+                    target={'_blank'}
+                    sx={{
+                        transition: '0.2s all',
+                        '&:hover': {color: '#a75fe7', transition: '0.3s all'}
+                    }}
+                >
+                    <EmailIcon/>
                 </IconButton>
             </div>
         </div>
