@@ -4,6 +4,6 @@
     height: 100%;
     /*width: 100%;*/
     margin: 0 auto;
-    @include flexPositioning(space-around, center);
+    @include flexPositioning(space-evenly, center);
     flex-wrap: wrap;
 }
