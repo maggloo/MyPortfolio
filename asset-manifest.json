@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.2d9eda56.css",
-    "main.js": "/MyPortfolio/static/js/main.f644809c.js",
+    "main.js": "/MyPortfolio/static/js/main.42e545f9.js",
     "static/js/453.ace21015.chunk.js": "/MyPortfolio/static/js/453.ace21015.chunk.js",
     "static/media/inctagram.png": "/MyPortfolio/static/media/inctagram.362af02bcec3178e9a15.png",
     "static/media/guess.png": "/MyPortfolio/static/media/guess.22ac9304757e41f40142.png",
     "static/media/gradient01.jpg": "/MyPortfolio/static/media/gradient01.0ca730adb7a608f44f3c.jpg",
     "static/media/gradient03.jpg": "/MyPortfolio/static/media/gradient03.99e2ff5b07ef873d620f.jpg",
+    "static/media/TE_AMO_RITA_sayago.png": "/MyPortfolio/static/media/TE_AMO_RITA_sayago.5e3bc953bf9cb04d56af.png",
     "static/media/gradient02.jpg": "/MyPortfolio/static/media/gradient02.961bf5ccd22cdfcc8863.jpg",
     "static/media/daily-hourly-schedule-and-do-list-template.jpg": "/MyPortfolio/static/media/daily-hourly-schedule-and-do-list-template.50ad31d59f18737ac421.jpg",
     "static/media/weather.png": "/MyPortfolio/static/media/weather.6fb54421152c3dd6233d.png",
-    "static/media/woman-web-developer-8184991-6547024.webp": "/MyPortfolio/static/media/woman-web-developer-8184991-6547024.dfe2a8c3560a3032cce1.webp",
     "static/media/cards.png": "/MyPortfolio/static/media/cards.eb17081f062068f06223.png",
     "static/media/zustand1.png": "/MyPortfolio/static/media/zustand1.c4d3684ea37b0b36c60b.png",
     "static/media/react-svgrepo-com.svg": "/MyPortfolio/static/media/react-svgrepo-com.c776c14607f920b203fc6fd76d081e44.svg",
@@ -28,11 +28,11 @@
     "static/media/tailwind.svg": "/MyPortfolio/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
     "static/media/html-5.svg": "/MyPortfolio/static/media/html-5.0107c93943a8f415b5db64ebb0a9d12d.svg",
     "main.2d9eda56.css.map": "/MyPortfolio/static/css/main.2d9eda56.css.map",
-    "main.f644809c.js.map": "/MyPortfolio/static/js/main.f644809c.js.map",
+    "main.42e545f9.js.map": "/MyPortfolio/static/js/main.42e545f9.js.map",
     "453.ace21015.chunk.js.map": "/MyPortfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d9eda56.css",
-    "static/js/main.f644809c.js"
+    "static/js/main.42e545f9.js"
   ]
 }
