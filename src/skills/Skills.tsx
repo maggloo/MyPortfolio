@@ -23,7 +23,6 @@ const Skills = () => {
         }
     }
 
-
     return (
         <Fade triggerOnce>
             <div className={styles.skillsBlock} id={'Skills'}>
