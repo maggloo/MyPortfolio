@@ -49,8 +49,8 @@ const Project = (props: ProjectPropsType) => {
                     {props.description}
                     </span>
                     <div className={styles.hashtags}>
-                        { props.hashtags.map(el => {
-                            return <span> #{el} </span>
+                        { props.hashtags.map((el, i) => {
+                            return <span key={i}> #{el} </span>
                         })}
                     </div>
                 </div>
