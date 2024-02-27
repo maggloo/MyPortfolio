@@ -5,6 +5,10 @@ import profilePhoto from '../assets/imgs/background/TE_AMO_RITA_sayago.png';
 import Particle from "../common/components/particle/Particle";
 import ReactTypingEffect from 'react-typing-effect';
 import {Fade} from "react-awesome-reveal";
+import Button from "@mui/material/Button";
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import MailIcon from '@mui/icons-material/Mail';
+import {Link} from "react-scroll";
 
 const Main = () => {
     return (
@@ -20,6 +24,26 @@ const Main = () => {
                         speed={100}
                         typingDelay={1500}
                     />
+                    </Fade>
+                    <Fade triggerOnce direction={'down'} delay={500}>
+                    <div className={styles.buttonGroup}>
+                        <Button variant={'contained'}
+                                startIcon={<MailIcon/>}
+                                className={styles.button}
+                        >
+                             <Link to="ContactMe" smooth={true}>
+                                Contact Me
+                             </Link>
+                        </Button>
+                        <Button variant={'contained'}
+                                href={'https://drive.google.com/file/d/16xH-G9ixNLfPfx8DWSNibCMbZsTu9-eK/view?usp=drive_link&export=download'}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.button}
+                                startIcon={<ContactPageIcon/>}>
+                                   My CV
+                        </Button>
+                    </div>
                     </Fade>
                 </div>
                 <div className={styles.photo}>
