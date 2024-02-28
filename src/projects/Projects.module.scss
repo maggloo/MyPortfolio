@@ -9,13 +9,19 @@
   padding: 100px 0;
   color: $primaryColor;
 
-  .projects {
-    @include flexPositioning(center, flex-start);
-    flex-wrap: wrap;
+  .projectsContainer {
+    flex-direction: column;
 
-    @media screen and (max-width: 1140px) {
-      justify-content: center;
+    .projects {
+      @include flexPositioning(center, flex-start);
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 1140px) {
+        justify-content: center;
+      }
     }
   }
+
+
 }
 
